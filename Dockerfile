@@ -12,3 +12,4 @@ EXPOSE 8080
 
 # Команда для запуска Spring Boot приложения
 ENTRYPOINT ["java", "-jar", "app.jar"]
+
