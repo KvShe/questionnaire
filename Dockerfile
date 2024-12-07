@@ -2,7 +2,7 @@ FROM openjdk:21-jdk-slim
 
 WORKDIR /app
 
-COPY questionnaire-*.jar /app.jar
+COPY questionnaire-*.jar app.jar
 
 EXPOSE 10000
 
