@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: questionnaire
+
+  datasource:
+    driver-class-name: org.postgresql.Driver
+
+    url: jdbc:postgresql://pg3.sweb.ru:5432/zheshelist
+    username: zheshelist
+    password: postQazwsx258794613
+
+#    url: jdbc:postgresql://localhost:5432/questionnaire
+#    username: postgres
+#    password: 123
+
+  mvc:
+    hidden method:
+      filter:
+        enabled: true # для PUT, PATH, DELETE
