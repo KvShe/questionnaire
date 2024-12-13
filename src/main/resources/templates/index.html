@@ -1,13 +1,42 @@
 <!doctype html>
-<html lang="ru">
+<html lang="ru" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Вопросник</title>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-<h1>Welcome!</h1>
+<header>
+    <div class="container">
+        <div class="logo">
+            <a href="/" th:href="@{/}"><img src="/images/logo.png" alt="Вопросник"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/questions" th:href="@{/questions}">Вопросы</a></li>
+                <li><a href="/questions/new" th:href="@{/questions/new}">Добавить вопрос</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <div class="container">
+        <h1>Добро пожаловать в Вопросник!</h1>
+        <p>Здесь вы можете просматривать существующие вопросы или добавлять свои собственные.</p>
+        <div class="actions">
+            <a class="btn" href="/questions" th:href="@{/questions}">Просмотреть вопросы</a>
+            <a class="btn" href="/questions/new" th:href="@{/questions/new}">Добавить вопрос</a>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2024 Вопросник. Все права защищены.</p>
+    </div>
+</footer>
 </body>
 </html>
